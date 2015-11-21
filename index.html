@@ -1,0 +1,98 @@
+<!DOCTYPE html5>
+<html lang="es">
+  <head>
+    <title>Javascript</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script>
+      //- alert('sape');
+      //- alert("Juan alias \"Maqui\" es el jefe");
+      //- alert("Esto usa una \t tabulación ");
+      //- alert("Esto usa un \n cambio de línea");
+      //- alert("Esto usa un \r retorno de carro");
+      //- alert("Esto es la barra invertida \\ ");
+      //-VARIABLES 
+      var navegador_version=0;
+      function verNavegador(){
+        var version;
+        version = document.appVersion;
+        return version;
+      }      
+      //- OBJETOS
+      function pagina(titulo,color,fondo) {
+        this.titulo = titulo;
+        this.color = color;
+        this.imgfondo= fondo;
+        this.length =3;
+      }
+      pagina.prototype.descripcion = "nueva elemento";
+      
+      var mipagina = new pagina("mi pagina","blue","cruces.gif");
+      console.log(mipagina);
+      console.log(mipagina.color);
+      //- para ampliar un objeto se usa el prototype ejemplo
+      console.log(mipagina.descripcion);
+      
+      //- ARRAYS
+      var semana = new Array(7);
+      var vacio = new Array();
+      miLista = new Array(1,5,9);
+      
+      semana[0] = 'Lunes';
+      semana[1] = 'Martes';
+      semana[2] = 'Miércoles';
+      semana[3] = 'Jueves' ;
+      semana[4] = 'Viernes';
+      semana[5] = 'Sábado';
+      semana[6] = 'Domingo';
+      vacio[5] = 'ultimo';
+      
+      //- ARRAY MULTIDIMENCIONALES
+      var array_multi = function(){
+        var tabla = new Array(3);
+        tabla[0]=new Array(2);
+          tabla[0][0]=10;
+          tabla[0][1]=5;
+        tabla[1]=new Array(2);
+          tabla[1][0]=6;
+          tabla[1][1]=7;
+        tabla[2]=new Array(2);
+          tabla[2][0]=9;
+          tabla[2][1]=3;
+          return tabla;
+      }
+      console.log(array_multi()[0]);
+      
+      //- FUNCIONES
+      var suma = function (a,b){
+        var result;
+        result = a + b;
+        return result;
+      }
+      
+      var operacion;
+      operacion = suma(5,4);
+      console.log(operacion);
+      
+      //- var multip = new Function("x", "y", "return x*y");
+      //- multip(3,4);
+      //- console.log(multip);
+      
+      //- OPERADOR VARIOS
+      var lista = new Array(1,4,7,9,10);
+      delete(lista,0);
+      console.log(lista[1]);
+      
+      hoy = true;
+      tipo = typeof(hoy);
+      console.log(tipo);
+      
+      //- FUNCIONES GLOBALES
+      
+      
+      
+      
+    </script>
+  </head>
+  <body></body>
+</html>
