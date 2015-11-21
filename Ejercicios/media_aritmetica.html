@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Media aritmetica</title>
+    <script>
+      // Crear una función que calcule la media aritmética(suma de datos dividido
+        // por número de valores) de un conjunto de
+      //  datos numéricos que se le pasan como argumentos.El número de datos es variable.
+
+      var media = function() {
+        var total = 0, res, numDatos, item;
+        numDatos = arguments.length;
+        for (item = 0; item < numDatos; item++){
+          total +=arguments[item];
+        }
+        res = total/numDatos;
+        return res;
+      }
+      console.log(media(4,2,1,6,4));
+    </script>
+  </head>
+  <body></body>
+</html>
