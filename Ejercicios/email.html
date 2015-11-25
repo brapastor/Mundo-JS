@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprobando email</title>
+    <script>
+//        Esta es una función que puede resultar bastante útil para comprobar direcciones de correo.
+// Se trata de ver si una dirección de email contiene el carácter @ y el punto en su lugar.
+
+        var verifyEmail = function (email){
+            var ind1, ind2,ind3;
+            ind1 = email.indexOf('@');
+            ind2 = email.indexOf('.');
+            ind3 = email.lastIndexOf('@');
+
+            if((ind1<=0)||(ind2<ind1)||(ind3 != ind1)){
+                return "no es correcta";
+            }
+            else {
+                return "Correcto";
+            }
+
+        }
+        console.log(verifyEmail("brapastor@gmail.com"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

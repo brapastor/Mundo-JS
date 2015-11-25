@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array aleatorio</title>
+    <script>
+        //        Este sencillo ejemplo trata de como rellenar una lista de longitud dada, en este caso 10,
+        // con números aleatorios comprendidos entre 0 y 20, todos enteros.
+
+
+        var llenarMatriz = function (matriz) {
+            var item, largo, valor;
+            largo = matriz.length;
+            for (item = 0; item < largo; item++) {
+                valor = Math.random() * 20;
+//                llenado de matriz
+//                    ejemplo
+//                    var matriz = new Array(2);
+//                    matriz[0]= 3;
+//                    matriz[1]= 2;
+                matriz[item] = Math.round(valor);
+            }
+            return matriz;
+        }
+
+        var llenar = new Array(10);
+        console.log(llenarMatriz(llenar));
+
+
+        //
+        //        var aleatorio = function(matriz){
+        //            var largo, valor, int;
+        //            largo= matriz.length;
+        //            for (int = 0; int< largo; int++){
+        //                valor = Math.random()*20;
+        //               matriz[int] = Math.round(valor);
+        //            }
+        //            return matriz;
+        //        }
+        //
+        //        var llenar = new Array(10);
+        //        console.log(aleatorio(llenar));
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

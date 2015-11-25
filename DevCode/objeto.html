@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var obj = new Object();
+        var obj2 = {};
+        var curso ={
+          nombre: 'javascript',
+          modulos:12
+        };
+
+        console.log(curso.nombre);
+//        editando curso
+        curso.nombre = "html y css";
+//        agregar una nueva propiedad
+        curso.alumnos =50;
+        console.log(curso);
+//        borrar propiedad
+        delete curso.alumnos;
+        console.log(curso);
+
+        var datosPersona = function(nombre,apellido,edad){
+            console.log(("mi nombre es: "+ nombre +" " + apellido + " mi edad "+ edad));
+        }
+        datosPersona("brayan","pastor",24);
+
+        var datosPersona2 = function(nombre, apellido, edad){
+            return nombre + " "+ apellido+ " "+ edad;
+        }
+
+        var persona = datosPersona2("julio","grados",22);
+        console.log(persona);
+
+//        Objeto con propiedades y metodos
+
+        var persona = {
+            nombre:"brayan",
+            apellido: "pastor",
+            mensaje: function(dato){
+                console.log(dato);
+            }
+        };
+
+        console.log(persona.nombre);
+        persona.mensaje("Alumno de javascript");
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
