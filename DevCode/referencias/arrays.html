@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //Declaracion
+        var colores = new Array();
+        var coloress = new Array(10);
+        var coloress = new Array("rojo", "azul", "verde");
+
+        var color = ["rojo", "azul", "verde"];
+        //        array vacio
+        var nombres = [];
+
+        //        ingresar array
+        console.log(coloress[0]);
+        console.log(coloress[1]);
+
+        //        tamaño de array
+        console.log(coloress.length);
+
+        //        restablecer el tamaño
+        coloress.length = 2;
+        console.log(coloress.length);
+        console.log(coloress);
+
+        //        Agregar un nuevo elemento array
+        coloress[coloress.length] = "amarillo";
+        console.log(coloress);
+
+        //        array a cadena
+
+        console.log(coloress.toString());
+
+        //        METODO STACKS EN LOS ARRAYS
+        //        Agregar mas elementos a array
+        var materiales = ["mochila", "lapiz", "cuaderno"];
+        console.log(materiales);
+        materiales.push("tijera", "lapicero");
+        console.log(materiales);
+
+        //        El metodo pop elimina el ultimo elemento del array
+
+        materiales.pop();
+        console.log(materiales);
+
+        //      metodo shift nos permite obtener el primer elemento de un array
+        console.log(materiales.shift());
+
+        // metodo Unshift agregar elementos al inicio del array
+        materiales.unshift("plaja", "tajador")
+        console.log(materiales);
+
+        // metodo reverse invierte el array
+        console.log(materiales.reverse());
+
+//        metodo sort ordena alfabeticamente
+
+        console.log(materiales.sort());
+
+//        metodo slide muestra los datos de hasta
+
+        console.log(materiales.slice(1,4));
+
+//        metodo supresion
+        console.log(materiales.splice(0,2));
+
+//        metodo insercion
+        console.log(materiales.splice(2,0,"plomo","marron"));
+
+//        remplazar
+        console.log(materiales.splice(2,1,"morado","violeta"));
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

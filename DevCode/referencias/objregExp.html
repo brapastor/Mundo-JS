@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var er = /hola/;
+        console.log(er.test("hola"));
+
+        var ex = new RegExp("hola");
+        ex.test("hola");
+        var er = /hola/i;
+        console.log(er.test("Hola"));
+
+        var patter1 = /\[bc]\at/i;
+
+        console.log(patter1.global);
+        console.log(patter1.ignoreCase);
+        console.log(patter1.multiline);
+        console.log(patter1.lastIndex);
+        console.log(patter1.source);
+
+        var palabra = "aaa bbb aaa bb abababa";
+
+        var er = /(a)+ (b)+/;
+
+        var dato = er.exec(palabra);
+        console.log(dato);
+        console.log(dato[0]);
+        console.log(dato[1]);
+
+        var ex = /a+b/gi;
+        var palabra = "aaAb";
+        console.log(ex.test(palabra))
+
+        var text = "este fue un corto verano";
+        var pattern = /corto/g;
+
+        if(pattern.test(text)){
+            console.log(RegExp.input);
+            console.log(RegExp.leftContext);
+            console.log(RegExp.rightContext);
+            console.log(RegExp.lastMatch);
+            console.log(RegExp.lastParen);
+            console.log(RegExp.multiline);
+        }
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
