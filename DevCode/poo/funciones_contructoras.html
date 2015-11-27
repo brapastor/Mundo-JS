@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // funciones constructoras
+        // creacion de un objeto
+        var persona = new Object();
+        //propiedades
+        persona.name = "brayan";
+        persona.age = 24;
+        persona.job = "ingeniero de software";
+
+        // Añadimos un metodo
+
+        persona.sayName = function () {
+            console.log(this.name);
+        }
+
+        // PATRON DE FABRICA es utilizado para abstraer el proceso de creacion de objetos especificos
+        // aca se crean funciones para encapsular la creacion de objetos ejemplo:
+
+        function createPersona(nombre, edad, trabajo) {
+            var o = new Object();
+            o.nombre = nombre;
+            o.edad = edad;
+            o.trabajo = trabajo;
+            o.sayName = function () {
+                alert(this.nombre);
+            }
+            return o;
+        }
+
+        var persona2 = createPersona("Greg", 27, "Doctor");
+        console.log(persona2);
+
+        //PATRON CONSTRUCTOR : Los constructores de EcmaScript se utilizan para crear tipos especificos de objetos
+
+        function Persona(nombre,edad,trabajo){
+            this.nombre = nombre;
+            this.edad =edad;
+            this.trabajo = trabajo;
+            this.sayName2 = function(){
+                console.log(this.nombre);
+            }
+        }
+
+
+        var persona3 = new Persona("joao",12,"wachin");
+        var persona4 = new Persona("brayan",12,"wachin");
+        persona4.sayName2();
+
+        Persona("jose",22,"sape");
+
+
+        var q = new Object();
+        Persona.call(q , "cristian",22,"contador");
+        q.sayName2();
+
+//        persona4.sayName();
+
+        function PersonaHappy(nombre,edad,trabajo){
+            this.nombre = nombre;
+            this.edad =edad;
+            this.trabajo = trabajo;
+            this.sayName2 = sayNameHappy;
+
+        }
+
+        function sayNameHappy (){
+            alert(this.nombre);
+        }
+
+        var personaHappy = new PersonaHappy("mauri", 29,"cantante");
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
