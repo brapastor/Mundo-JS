@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        //Mismos metodos para diferentes objetos
+        var Carro = function(){
+            this.motor = true;
+        }
+
+        var Automovil = function(){
+            this.motor = true;
+        }
+
+        var taxi = new Carro();
+        var camion = new Automovil();
+
+        console.log(taxi)
+        console.log(camion)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

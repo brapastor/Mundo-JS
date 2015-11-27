@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //        SIntaxis de prototypos alternativos
+        function Persona (){}
+
+        Persona.prototype ={
+            nombre:"brayan",
+            edad:24,
+            trabajo:"ingeniero",
+            sayName:function(){
+                console.log(this.nombre);
+            }
+        }
+
+        console.log(Persona);
+
+
+        function Persona2 (){}
+
+        Persona2.prototype ={
+            constructor: Persona2,
+            nombre:"brayan",
+            edad:24,
+            trabajo:"ingeniero",
+            sayName:function(){
+                console.log(this.nombre);
+            }
+        }
+        console.log(new Persona2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

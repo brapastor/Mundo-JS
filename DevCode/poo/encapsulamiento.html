@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Persona(name,age,job){
+            var nombre = name;
+            var edad = age;
+            var trabajo = job;
+
+            this.sayName = function(){
+                return nombre + "trabajare de "+ trabajo;
+            }
+
+            this.getJob = function(){
+                return trabajo;
+            }
+
+            this.changeJob = function(nuevoJob){
+                trabajo= nuevoJob;
+            }
+        }
+
+        var persona1 = new Persona("brayan",22,"ingeniero");
+        var persona2 = new Persona("joao",24,"doctor");
+        console.log(persona1);
+
+        persona1.changeJob("Administrador");
+        console.log(persona1.getJob());
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

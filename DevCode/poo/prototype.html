@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //PATRON PROTOTYPE : se centra en la creacion de un objeto que se puede utilizar como un modelo para otros objetos
+        // a traves de herencia de prototypos; al crear una funcion se crea con una propiedad prototype
+        // ventaja es que todas la propiedades y metodos son compartidos entre instancias de objetos
+        function Persona(nombre, edad, trabajo) {
+            this.nombre = nombre;
+            this.edad = edad;
+            this.trabajo = trabajo;
+            this.sayName = function () {
+                console.log(this.nombre);
+            }
+        }
+
+        var pesona1 = new Persona("brayan", 29, "ingeniero de software");
+        var pesona2 = new Persona("greck", 29, "Doctor");
+        // ahora el objeto Persona contara con un propiedad prototype; ahora si deseamos agregar una nueva propiedad se vera reflejada en
+        //        ambas instancias
+        Persona.prototype.apellido = "pastor";
+
+        //        ahora lo vemos
+        console.log(pesona1);
+        console.log(pesona2);
+
+//        EJEMPLO 2
+
+        function PersonaP (){};
+        PersonaP.prototype.nombre = "Mauri";
+        PersonaP.prototype.edad = 29;
+        PersonaP.prototype.trabajo = "ingeniero";
+        PersonaP.prototype.sayName = function(){
+            console.log(this.nombre);
+        }
+
+
+        var personaP = new PersonaP();
+        var personaP2 = new PersonaP();
+
+        personaP2.sayName();
+//        Solo se cambia en la instancia no en el contructor
+        personaP.nombre = "greck";
+
+//        ver si una propiedad pertenece al objeto
+        console.log("nombre" in personaP);
+
+
+        console.log(personaP.nombre);
+        console.log(personaP2.nombre);
+
+        console.log(PersonaP.prototype.isPrototypeOf(personaP));
+        console.log(PersonaP.prototype.isPrototypeOf(personaP2));
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

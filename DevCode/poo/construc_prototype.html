@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //COMBINACION DE PATRON CONSTRUCTOR Y PROTOTYPE
+//        DEFINIR TIPOS PERSONALIZADOS
+//        PATRONES PROTOTYPE :DEFINE METODOS Y PROPIEDADES COMPARTIDAS
+//                 CONSTRUCTOR: DEFINE LAS PROPIEDADES DE INSTANCIA
+
+        function Persona(nombre,edad, trabajo){
+            this.nombre = nombre;
+            this.edad = edad;
+            this.trabajo = trabajo;
+            this.amigos = ["Edwin","Juan"];
+        }
+
+        Persona.prototype = {
+            constructor:Persona,
+            sayName:function(){
+                console.log(this.nombre);
+            }
+        }
+
+        var persona1 = new Persona("brayan",24,"ingeniero wachin");
+        var persona2 = new Persona("joao",22,"ingeniero civil");
+
+        persona1.amigos.push("paul");
+        console.log(persona1.amigos);
+        console.log(persona2.amigos);
+
+        console.log(persona1.amigos === persona2.amigos);
+        console.log(persona1.sayName() === persona2.sayName());
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
