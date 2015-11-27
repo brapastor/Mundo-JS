@@ -4,6 +4,38 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
+        var numberObject = new Number(10);
+        var num = 10;
+
+        console.log(num.toString());
+        console.log(num.toString(2)); // en base 2
+        console.log(num.toString(8));
+
+//        da formatos
+
+        var num2 =10;
+        console.log(num2.toFixed(2)); // da 2 decimales que se mostrara
+
+        var num3=10.005;
+
+        console.log(num3.toFixed(2));
+//
+//        metodo toExponencial cadena con el numero formateado en notacion exponencial E
+        var num4 =10;
+        console.log(num4.toExponential(1));
+
+        var num5 =99;
+        console.log(num5.toPrecision(1)); //un solo digito
+        console.log(num5.toPrecision(2)); // dos digitos
+        console.log(num5.toPrecision(3)); //tres digitos
+
+        var num6 =10;
+        var numObject2 = new Number(10);
+
+        console.log(typeof num6);
+        console.log(typeof numObject2);
+
+
 
     </script>
 </head>

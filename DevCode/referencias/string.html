@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var stringObject = new String("hola mundo");
+
+        var stringValue = "hola mundo";
+
+        console.log(stringValue.length)
+        console.log(stringObject.length);
+
+//        metodo de caracteres charAt() devuelve el caracter en la posicion dada
+        console.log(stringValue.charAt(1));
+        console.log(stringValue.charCodeAt(1)); //codigo de caracter de la letra o 111
+
+        console.log(stringValue[1]);
+
+//        metodo concat
+
+        var stringHello ="hola ";
+        var recultado = stringHello.concat("world");
+        console.log(recultado);
+
+        var resultado2 = stringHello.concat("world","!");
+        console.log(resultado2);
+
+//      metodos obtener valores de cadenas de unas subcadenas
+//        metodo slice substr substrig devuelven una subcadena de una cadena
+//        tienen 3 parametros
+//        1 posicion de la captura de la subcadena
+//        2 indicar la posicion que debe de detenerse
+
+        var stringWorld ="hello world";
+
+        console.log(stringWorld.slice(3));
+        console.log(stringWorld.substr(3));
+        console.log(stringWorld.substring(3));
+        console.log(stringWorld.slice(3,7));
+        console.log(stringWorld.substring(3,7));
+        console.log(stringWorld.substr(3,7));
+//        con negativos
+
+        console.log(stringWorld.slice(-3));
+        console.log(stringWorld.substring(-3));
+        console.log(stringWorld.substr(-3));
+        console.log(stringWorld.slice(3,-4));
+        console.log(stringWorld.substring(3,-4));
+        console.log(stringWorld.substr(3,-4));
+
+        console.log(stringWorld.toLowerCase());
+        console.log(stringWorld.toLocaleLowerCase());
+        console.log(stringWorld.toUpperCase());
+        console.log(stringWorld.toLocaleUpperCase());
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
