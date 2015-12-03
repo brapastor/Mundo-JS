@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+      function add(num1,num2){
+          var suma = num1+num2;
+          return suma;
+      }
+
+        function myObject(){
+            var privateVariable =10;
+            function privateFunction(){
+                return false;
+            }
+            //accedemos solo con esto
+            this.publicMetodo = function(){
+                privateVariable++;
+                return privateFunction();
+            }
+        }
+
+        function Persona(name){
+            this.getName = function(){
+                return name;
+            }
+            this.setName = function(value){
+                name = value;
+            }
+        }
+
+        var persona1 = new Persona("Nicolas");
+        console.log(persona1.getName());
+
+        persona1.setName("Greg");
+
+        console.log(persona1.getName());
+
+
+//        METODOS PRIVILIGIADOS
+
+      (function(){
+          var privareVar = 10;
+          function privFuction(){
+              return false;
+          }
+          MyObjeto = function(){
+
+          };
+          myObject.prototype.publicMetodo = function(){
+              privareVar++;
+              return privFuction();
+          }
+      })();
+
+      (
+        function(){
+          var name ="";
+          Personaa = function(value){
+              name = value;
+          }
+          Personaa.prototype.getName = function(){
+              return name;
+          }
+
+          Personaa.prototype.setName= function(value){
+              name =value;
+          }
+
+        }
+
+      )();
+
+        var per = new Personaa("brayan");
+        console.log(per.getName());
+        per.setName("mauri");
+        console.log(per.getName());
+
+        var per2 = new Personaa("sapencio");
+        console.log(per.getName());
+        console.log(per2.getName());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

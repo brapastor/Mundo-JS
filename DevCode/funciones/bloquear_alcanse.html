@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+      function outputNumbers(count){
+          for(var i = 0; i<count; i++){
+              alert(i);
+          }
+          var i;
+          alert(i);
+      }
+
+//      aca se destruye la i al terminal el for
+        function outputNumber2(count){
+            (function(){
+                for (var i=0; i<count;i++){
+                    alert(i)
+                }
+            })();
+            alert(i)
+        }
+      outputNumber2(5);
+
+        var count =5;
+//        outputNumbers(5);
+
+        var dato = function(){
+
+        }
+
+        dato();
+
+      (function(){})();
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

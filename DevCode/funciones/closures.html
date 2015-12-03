@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function compare(val1,val2){
+            if(val1<val2)
+            {
+                return -1
+            }
+            else if(val1>val2){
+                return 1;
+            }
+            else {
+                return 0;
+            }
+        }
+
+        var resultado = compare(5,10);
+        console.log(resultado);
+
+        var name = "global";
+        var obj = {
+            name: 'my objeto',
+            getNameFuc: function(){
+                var that = this;
+                return function (){
+                    return that.name;
+                }
+            }
+        }
+
+        alert(obj.getNameFuc()());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
