@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17ae81a1-17ff-426e-a643-9026dde10eb5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DevCode/BOM/document.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DevCode/BOM/location.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JS.iws" />
@@ -84,11 +84,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="document.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DevCode/BOM/document.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4915254">
+            <state vertical-scroll-proportion="-9.666667">
               <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DevCode/BOM/location.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7288136">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -146,6 +156,7 @@
         <option value="$PROJECT_DIR$/DevCode/BOM/window.html" />
         <option value="$PROJECT_DIR$/DevCode/BOM/position.html" />
         <option value="$PROJECT_DIR$/DevCode/BOM/document.html" />
+        <option value="$PROJECT_DIR$/DevCode/BOM/location.html" />
       </list>
     </option>
   </component>
@@ -294,10 +305,7 @@
       <recent name="$PROJECT_DIR$/DevCode" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.document.html">
-    <configuration default="false" name="bloquear_alcanse.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/DevCode/funciones/bloquear_alcanse.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.location.html">
     <configuration default="false" name="privadas_estaticas.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/DevCode/funciones/privadas_estaticas.html">
       <method />
     </configuration>
@@ -308,6 +316,9 @@
       <method />
     </configuration>
     <configuration default="false" name="document.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/DevCode/BOM/document.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="location.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/DevCode/BOM/location.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -359,19 +370,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.bloquear_alcanse.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.privadas_estaticas.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.window.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.position.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.document.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.privadas_estaticas.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.window.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.position.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.document.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.location.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.document.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.position.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.window.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.privadas_estaticas.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.bloquear_alcanse.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.location.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.document.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.position.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.window.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.privadas_estaticas.html" />
       </list>
     </recent_temporary>
   </component>
@@ -415,13 +426,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DevCode/referencias/objregExp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DevCode/referencias/funciones.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -773,8 +777,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DevCode/BOM/document.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4915254">
+        <state vertical-scroll-proportion="-9.666667">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DevCode/BOM/location.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7288136">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
           <folding />
         </state>
       </provider>
