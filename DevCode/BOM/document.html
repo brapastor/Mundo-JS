@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        console.log(document.lastModified); // ultima modificacion de la pagina
+        console.log(document.referrer); // la url desde que se accedio a la pagina
+        document.title = 'cambio de titulo'; // texto de title
+        console.log(document.title); // texto de title
+        console.log(document.URL); // URL DE LA PAGINA
+        console.log(document.anchors); // todas las anclas
+        console.log(document.applets); // todas las apples
+//        console.log(document.embeds); // todas las apples
+        console.log(document.forms); // todas las apples
+        console.log(document.links); // todas las apples
+        console.log(document.images); // todas las apples
+
+        console.log(document.getElementsByName("p"));
+        console.log(document.links[0]);
+        console.log(document.images[0]);
+        console.log(document.forms[0]);
+        console.log(document.forms["consultas"]);
+
+    </script>
+
+</head>
+<body>
+    <p>Primer parrafo de la pagina</p>
+
+    <a href="https://devcode.la">Un enlace</a>
+
+    <!--<img  name="logotipo" alt="">-->
+
+    <form action="" name="consultas">
+        <input type="text">
+        <input type="text">
+    </form>
+
+</body>
+</html>
