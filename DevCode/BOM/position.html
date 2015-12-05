@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //tamaño y posicion de la ventana
+        //Desplaza la posicion de la ventana x pixel hacia la derecha y y pixel hacia abajo
+
+//        moveBy(x, y);
+
+        //Desplaza la ventana del navegador hasta que la esquina superior izquierda se encuentre en la posicion
+        //(x,y) de la pantalla del usuario
+//        moveTo(x, y)
+
+        //redimensiona la ventana del navegador de forma que su nueva anchura sea igual a (anchura_anterior + x) y su
+        //nueva altura sea igual a (altura_anterior + y)
+//        resizeBy(x, y);
+
+        //redimensiona la ventana del navegador hasta que su anchura sea igual a x y su altura sea igual a y
+//        resizeTo(x,y);
+
+        function openWin(){
+           myWindown = window.open(",",'widt=200,height=200');
+            myWindown.document.write("<p> Mi ventana</p>");
+        }
+
+//        openWin()
+        window.moveBy(200,300);
+        window.resizeTo(250,250);
+        window.moveTo(0,0);
+
+        console.log(window.outerHeight)
+        console.log(window.outerWidth)
+
+        setTimeout("console.log('hola paso 3 segundod')",3000);
+
+        function muestraMensaje(){
+            console.log("ha transcurrido 3 segundos")
+        }
+
+        setTimeout(muestraMensaje,3000);
+        var id = setTimeout(muestraMensaje,5000)
+        clearTimeout(id);
+
+        setInterval(muestraMensaje,3000)
+        var id2 = setInterval(muestraMensaje,1000)
+        clearInterval(id2);
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

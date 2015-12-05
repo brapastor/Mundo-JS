@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
+        var edad = 29;
+        function sayEdad(){
+            alert(this.edad);
+        }
 
+        alert(window.edad);
+        sayEdad();
+        window.sayEdad();
     </script>
 </head>
 <body>
