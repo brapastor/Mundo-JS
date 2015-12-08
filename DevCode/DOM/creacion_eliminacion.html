@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CReacion y eliminacion</title>
+    <script>
+//        1.creacion de un tipo
+            var parrafo = document.createElement("p");
+//        2.creacion de un tipo text
+          var contenido = document.createTextNode("hola javascript");
+//        3.Añadir el nodo text como hijo del nodo element
+          parrafo.appendChild(contenido);
+//        4.Añadir el nodo Element a la pagina, en forma de nodo hijo del nodo correspondiente al
+//        lugar en el que se quiere insertar el elemnto
+          document.body.appendChild(parrafo);
+//
+    </script>
+</head>
+<body>
+
+</body>
+</html>

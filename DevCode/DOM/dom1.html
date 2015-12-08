@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <script>
+        /*
+        * 12 tipos de nodos
+        * document nodo raiz
+        * element
+        *
+        * */
+        var parrafo = document.getElementsByTagName("p")
+        var primerparrafo = parrafo[0];
+        console.log(primerparrafo);
+        for(var i = 0; i<parrafo.length; i++){
+            console.log(parrafo[i]);
+        }
+//        var enlace = primerparrafo.getElementsByTagName("a");
+//        console.log(enlace);
+
+        var parrafoId = document.getElementById("Dom");
+        console.log(parrafoId)
+
+        var querySelector = document.querySelectorAll(".curso");
+        console.log(querySelector)
+
+        var parrafoFun = document.getElementById("fundamentos");
+        console.log(parrafoFun)
+        parrafoFun.parentNode.removeChild
+
+        var enlace = document.getElementById("enlace")
+        console.log(enlace.href);
+
+    </script>
+</head>
+<body>
+    <p>Hola gente de js
+        <a id="enlace" href="http://google.com">mi enlace</a>
+    </p>
+    <div>
+        <p name="Fundamentos" id="fundamentos">Fundamentos</p>
+
+        <p class="curso" name="Sintaxis" id="Sintaxis">Sintaxis</p>
+
+        <p class="curso" name="Tipo de dato" id="tipo de dato">Tipo de dato</p>
+
+        <p class="curso" name="Dom" id="Dom">Dom</p>
+    </div>
+</body>
+</html>
