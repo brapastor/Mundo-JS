@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body onload="console.log('ya cargaste pagina');">
+    <input id="pinchable" type="button" value="click">
+    <input type="text" id="texto" onkeypress="return limita(10);">
+<script>
+
+
+
+    var elDiv = document.getElementById("pinchable");
+
+    function manejador(evento){
+
+        var elevento = evento || window.event;
+        var codigo = elevento.charCode || elevento.keyCode;
+        var caracter = String.fromCharCode(codigo);
+
+        console.log(caracter);
+
+//        console.log("[" + evento.type +"] El codigo de la tecla pulsada es " + elevento.keyCode);
+
+    }
+    function limita (maximoCaracter)
+    {
+        var elemento = document.getElementById("texto");
+        if(elemento.value.length >= maximoCaracter){
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    document.onkeypress = manejador;
+
+//    document.onkeyup = manejador;
+//    document.onkedown = manejador;
+
+//    function  procesaEvento (evento){
+//        if (evento.type == "click"){
+//            console.log("has dado un click");
+//        }
+//        else if(evento.type == "mouseover"){
+//            console.log("Has movido el raton");
+//        }
+//    }
+//
+//    elDiv.onclick = procesaEvento;
+//    elDiv.onmouseover = procesaEvento;
+
+</script>
+</body>
+</html>

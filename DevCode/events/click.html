@@ -20,22 +20,27 @@
         console.log("gracias por darle");
     }
 
-    document.getElementById("pinchable").onclick = muestraMensaje;
 
-    function resalta (elemento){
-        switch (elemento.style.borderColor){
-            case 'silver':
-            case 'silver silver silver silver':
-            case '#c0c0c0':
-                elemento.style.borderColor = 'black';
-                break;
-            case 'black':
-            case 'black black black black':
-            case '#000000':
-                elemento.style.borderCollapse = 'silver';
-                break;
-        }
-    }
+    var elDiv = document.getElementById("pinchable");
+    elDiv.addEventListener("click",muestraMensaje,false);
+
+    elDiv.removeEventListener("click",muestraMensaje,true);
+//    document.getElementById("pinchable").onclick = muestraMensaje;
+//
+//    function resalta (elemento){
+//        switch (elemento.style.borderColor){
+//            case 'silver':
+//            case 'silver silver silver silver':
+//            case '#c0c0c0':
+//                elemento.style.borderColor = 'black';
+//                break;
+//            case 'black':
+//            case 'black black black black':
+//            case '#000000':
+//                elemento.style.borderCollapse = 'silver';
+//                break;
+//        }
+//    }
 </script>
 </body>
 </html>
